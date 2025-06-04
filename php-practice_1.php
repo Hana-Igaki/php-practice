@@ -10,7 +10,7 @@ echo $num/2;
 
 // Q3 日付操作
 date_default_timezone_set('Asia/Tokyo');
-echo date('現在時刻は、Y年m月d日' . ' ' . 'H時i分s秒です。');
+echo '現在時刻は、' . date('Y年m月d日') . ' ' . date('H時i分s秒') . 'です。';
 
 // Q4 条件分岐-1 if文
 $device = 'mac';
@@ -59,8 +59,8 @@ $kantoo = [
   '群馬県'=>'前橋市',
   '茨城県'=>'水戸市'];
   foreach ($kantoo as $pref => $city){
-    if ($kantoo = 'さいたま市'){
-      echo $pref . 'の県庁所在地は、' . $city . 'です。'
+    if ($city === 'さいたま市'){
+      echo $pref . 'の県庁所在地は、' . $city . 'です。';
     }
   }
 
@@ -77,7 +77,7 @@ $kantoo['愛知県']='名古屋市';
 $kantoo['大阪府']='大阪市';
 
 foreach ($kantoo as $pref => $city){
-  if ($kantoo==='名古屋市' || $kantoo==='大阪市'){
+  if ($city==='名古屋市' || $city==='大阪市'){
     echo $pref . 'は関東地方ではありません。' . "\n";
   }
   else{
@@ -88,7 +88,7 @@ foreach ($kantoo as $pref => $city){
 // Q10 関数-1
 function hello($name)
 {
-  echo $name . 'さん、こんにちは。';
+  echo $name . 'さん、こんにちは。' . "\n";
 }
 
 hello('阿部');
@@ -148,38 +148,38 @@ $Grades5 = evaluateGrade($Grade5);
 switch ($Grades1){
   case 'A';
   case 'B';
-    echo '合格です。';
+    echo '合格です。' . "\n";
     break;
   
   case 'C';
-    echo '合格ですが追加課題があります。';
+    echo '合格ですが追加課題があります。' . "\n";
     break;
   
   case 'D';
-    echo '不合格です。';
+    echo '不合格です。' . "\n";
     break;
   
   default:
-    echo '判定不能です。講師に問い合わせてください。';
+    echo '判定不能です。講師に問い合わせてください。' . "\n";
     break;
 }
 
 switch ($Grades5){
   case 'A';
   case 'B';
-    echo '合格です。';
+    echo '合格です。' . "\n";
     break;
   
   case 'C';
-    echo '合格ですが追加課題があります。';
+    echo '合格ですが追加課題があります。' . "\n";
     break;
   
   case 'D';
-    echo '不合格です。';
+    echo '不合格です。' . "\n";
     break;
   
   default:
-    echo '判定不能です。講師に問い合わせてください。';
+    echo '判定不能です。講師に問い合わせてください。' . "\n";
     break;
 }
 
