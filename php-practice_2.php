@@ -52,7 +52,6 @@ unset($info);
 var_dump($personalInfos);
 
 // Q3 オブジェクト-1
-// Q3 オブジェクト-1
 <?php
 
 class Student
